@@ -1,9 +1,24 @@
 import React from "react";
 import "./home.scss";
+import { Chart, Featured, Navbar, Sidebar, Widget } from "../../components";
 const Home = () => {
+
     return (
         <div className="home">
-            <h1 className="title">Lama dev</h1>
+            <Sidebar />
+            <div className="homeContainer">
+                <Navbar />
+                <div className="widgets">
+                    <Widget type={"user"} />
+                    <Widget type={"order"} />
+                    <Widget type={"earning"} />
+                    <Widget type={"balance"} />
+                </div>
+                <div className="charts">
+                    <Featured />
+                    <Chart />
+                </div>
+            </div>
 
         </div>
     );
