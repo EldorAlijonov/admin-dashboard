@@ -1,6 +1,6 @@
 import React from "react";
 import "./home.scss";
-import { Chart, Featured, Navbar, Sidebar, Widget } from "../../components";
+import { Chart, Featured, Navbar, Sidebar, Widget, TableComponent } from "../../components";
 const Home = () => {
 
     return (
@@ -16,7 +16,11 @@ const Home = () => {
                 </div>
                 <div className="charts">
                     <Featured />
-                    <Chart />
+                    <Chart aspect={2 / 1} title="User Spending ( Last 6 Months)" />
+                </div>
+                <div className="listContainer">
+                    <div className="listTitle">Latest Transaction</div>
+                    <TableComponent />
                 </div>
             </div>
 
