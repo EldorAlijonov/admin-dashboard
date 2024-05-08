@@ -39,30 +39,6 @@ const New = (props) => {
                                     <input type={e.type} placeholder={e.placeholder} />
                                 </div>
                             ))}
-                            <div className="formInput">
-                                <label>Name and Surname</label>
-                                <input type="text" placeholder="Name and Surname" />
-                            </div>
-                            <div className="formInput">
-                                <label>Email</label>
-                                <input type="email" placeholder="Email" />
-                            </div>
-                            <div className="formInput">
-                                <label>Phone</label>
-                                <input type="text" placeholder="+1 234 2356 456" />
-                            </div>
-                            <div className="formInput">
-                                <label>Password</label>
-                                <input type="password" placeholder="Password" />
-                            </div>
-                            <div className="formInput">
-                                <label>Address</label>
-                                <input type="text" placeholder="Address" />
-                            </div>
-                            <div className="formInput">
-                                <label>Country</label>
-                                <input type="text" placeholder="Country" />
-                            </div>
                             <button>Send</button>
                         </form>
                     </div>

@@ -1,11 +1,9 @@
-.dataTable {
-    height: 600px;
+.datatable {
     padding: 20px;
 
-
     .datatableTitle {
-        font-size: 24px;
         width: 100%;
+        font-size: 24px;
         color: gray;
         margin-bottom: 10px;
         display: flex;
@@ -17,9 +15,9 @@
             color: green;
             font-size: 16px;
             font-weight: 400;
+            border: 1px solid green;
             padding: 5px;
             border-radius: 5px;
-            border: 1px solid green;
             cursor: pointer;
         }
     }
@@ -38,7 +36,7 @@
     }
 
     .cellWithStatus {
-        text-align: center;
+        padding: 5px;
         border-radius: 5px;
 
         &.active {
@@ -61,7 +59,6 @@
         display: flex;
         align-items: center;
         gap: 15px;
-
 
         .viewButton {
             padding: 2px 5px;

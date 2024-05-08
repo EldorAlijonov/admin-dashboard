@@ -1,10 +1,16 @@
 import { Route, Routes } from "react-router-dom";
 import { Home, List, Login, New, Single } from "./pages";
 import { productInputs, userInputs } from "./formSource";
-
+import "./style/dark.scss";
+import { useContext } from "react";
+import { DarkModeContext } from "./context/darkModeContext";
 const App = () => {
+
+  const { darkMode } = useContext(DarkModeContext);
+
   return (
-    <div className="App">
+    <div className={darkMode ? "app dark" : "app"
+    }>
       <Routes>
         <Route path="/">
           <Route index element={<Home />} />
@@ -27,7 +33,7 @@ const App = () => {
           </Route>
         </Route>
       </Routes>
-    </div>
+    </div >
   );
 }
 
